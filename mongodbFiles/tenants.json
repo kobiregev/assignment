@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "60214e856c70c222648f40c6"
+  },
+  "name": "Alex",
+  "phoneNumber": "0504814705",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 600,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214e856c70c222648f40c7"
+  },
+  "name": "Assaf",
+  "phoneNumber": "0565802979",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 200,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214e856c70c222648f40c8"
+  },
+  "name": "Amit",
+  "phoneNumber": "0552387752",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 100,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214e9d6c70c222648f40c9"
+  },
+  "name": "Alex",
+  "phoneNumber": "0504814704",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 400,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60214e9d6c70c222648f40ca"
+  },
+  "name": "Avner",
+  "phoneNumber": "0526453322",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 100,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60226ed885ab954468c7a6ab"
+  },
+  "name": "Assaf",
+  "phoneNumber": "0565802979",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 197,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60226ed885ab954468c7a6ad"
+  },
+  "name": "Elad",
+  "phoneNumber": "0542075446",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 800,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60226ed885ab954468c7a6ae"
+  },
+  "name": "Assaf",
+  "phoneNumber": "0565802979",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 200,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60226ed885ab954468c7a6af"
+  },
+  "name": "Linoy",
+  "phoneNumber": "0568823847",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602285f6481bd049583f3791"
+  },
+  "name": "Yonatan",
+  "phoneNumber": "0545744657",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022864c481bd049583f3792"
+  },
+  "name": "Boris",
+  "phoneNumber": "0526253311",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022f60cdc542530b8aec69c"
+  },
+  "name": "kobi regev",
+  "phoneNumber": "0545744657",
+  "address": {
+    "$oid": "60212c98f326502e7c8b49a8"
+  },
+  "debt": 0,
+  "__v": 0
+}]
