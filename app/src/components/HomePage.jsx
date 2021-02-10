@@ -4,14 +4,14 @@ import Modal from './Modal';
 import { getTenants, commonTenantCrud, searchTenantByName, getAddressesList } from '../commhelpers/TenantsHelpers'
 
 export default function HomePage({ user }) {
-    const url = 'http://localhost:1000/tenants/'
     const options = [
         { value: 'showAll', label: 'Show all' },
         { value: 'noDebt', label: 'Without debt' },
         { value: 'debt', label: 'With debt' },
     ];
     const [tenants, setTenants] = useState([])
-    const [pages, setPages] = useState({currentPage:1})
+    const [pages, setPages] = useState({ currentPage: 1 })
+    const [isPressed,setIsPressed] = useState(false)
     const [sort, setSort] = useState('showAll')
     const [status, setStatus] = useState(false);
     const [modalMode, setModalMode] = useState('edit');
@@ -28,6 +28,8 @@ export default function HomePage({ user }) {
     useEffect(() => {
         const cbSuccess = (data) => {
             setTenants(data);
+            setIsPressed(false)
+
             setPages({ ...pages, totalPages: data.totalPages })
         }
         const cbErr = () => {
@@ -45,6 +47,7 @@ export default function HomePage({ user }) {
     }
 
     const handlePagination = (e) => {
+        setIsPressed(true)
         e.target.innerText === 'Next' ? setPages({ ...pages, currentPage: pages.currentPage + 1 }) : setPages({ ...pages, currentPage: pages.currentPage - 1 })
     }
 
@@ -168,9 +171,9 @@ export default function HomePage({ user }) {
                     </table>
                 </div>
                 <div className='footer'>
-                    <button className='primary-btn btn footer_btn' onClick={handlePagination} disabled={pages.currentPage === 1}>Prev</button>
+                    <button className='primary-btn btn footer_btn' onClick={handlePagination} disabled={pages.currentPage === 1 || isPressed}>Prev</button>
                     <span>{pages.currentPage}</span>
-                    <button className='primary-btn btn footer_btn' onClick={handlePagination} disabled={pages.currentPage === pages.totalPages || tenants.tenants?.length === 0}>Next</button>
+                    <button className='primary-btn btn footer_btn' onClick={handlePagination} disabled={isPressed || pages.currentPage === pages.totalPages || tenants.tenants?.length === 0}>Next</button>
                 </div></> : <img className='loader' src={process.env.PUBLIC_URL + '/loading.gif'} />
             }
         </div >
